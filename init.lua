@@ -18,12 +18,10 @@ vim.opt.splitbelow = true
 vim.opt.splitright = true  
 vim.opt.confirm = true
 vim.opt.splitkeep = "screen"
+vim.opt.winborder = "rounded"
 
 --Leader key!
 vim.g.mapleader = " "
-
---Window border
-vim.opt.winborder = "rounded"
 
 -- Stay in visual mode when indenting
 vim.keymap.set('v', '<', '<gv', {desc = 'Indent left'})
