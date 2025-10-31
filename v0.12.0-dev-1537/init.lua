@@ -103,7 +103,6 @@ require "mini.icons".setup({})
 
 local lspconfig = require("lspconfig")
 
-
 --lua LSP setup
 vim.lsp.config.lua_ls = {
     cmd = { "lua-language-server" },
