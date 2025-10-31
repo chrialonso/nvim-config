@@ -106,18 +106,18 @@ local lspconfig = require("lspconfig")
 --Lua LSP config
 lspconfig.lua_ls.setup({
 		settings = {
-				Lua = {
-						runtime = {
-								version = 'LuaJIT',
-						},
-						diagnostics = {
-								globals = {'vim'},
-						},
-						workspace = {
-								library = vim.api.nvim_get_runtime_file("", true),
-						},
-						telemetry = {
-								enable = false,
+			Lua = {
+				runtime = {
+					version = 'LuaJIT',
+				},
+				diagnostics = {
+					globals = {'vim'},
+				},
+				workspace = {
+				library = vim.api.nvim_get_runtime_file("", true),
+				},
+				telemetry = {
+						enable = false,
 						},
 				},
 		},
@@ -127,12 +127,12 @@ lspconfig.lua_ls.setup({
 lspconfig.rust_analyzer.setup({
 		root_dir = lspconfig.util.root_pattern("Cargo.toml", ".git"),
 		settings = {
-				["rust-analyzer"] = {
-						cargo = {
-								allFeatures = true,
-						},
-						procMacro = {
-								enable = true,
+			["rust-analyzer"] = {
+				cargo = {
+						allFeatures = true,
+				},
+				procMacro = {
+						enable = true,
 						},
 				},
 		},
